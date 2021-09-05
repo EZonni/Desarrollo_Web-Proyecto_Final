@@ -1,0 +1,294 @@
+$header_backgroundImage: linear-gradient(red,rgb(14, 13, 13) );
+$body_backgroundColor: rgb(14, 13, 13);
+$footer_backgroundImage: linear-gradient(rgb(14, 13, 13), red);
+$tablaPilotos_encabezado--fontSize: 2rem;
+$tablaPilotos_textoTabla--fontSize: 1.5rem;
+.fuente{
+        font-family: 'Roboto', sans-serif;
+        color: white
+}
+$fontSizeTextos: 2.5rem;
+$fontSizeTitulos: 4.5rem;
+$fontSizeSubtitulos: 3rem;
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: $body_backgroundColor;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+}
+footer{
+    background-image: $footer_backgroundImage;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+    height: 70px;
+}
+.menu{ 
+    background-image: $header_backgroundImage; 
+    @extend .fuente;
+    font-size: $fontSizeTextos; 
+    position:static;
+}
+#marginMenu{
+    margin-right: 2%;
+}
+li{
+    display: inline-flex;
+    padding-left: 1rem;
+    padding-right: 1rem;  
+ }
+ .nav-link:hover{
+    color: white;
+    transform: scale(1.2);
+}
+ .imgLogo{
+          width: 18rem;
+          height: 15rem;
+          margin-left: 5%;
+ }
+ .main{
+     display: flex;
+     flex-direction: column;
+     margin: 35px 25px 25px 25px;
+     flex: 1;
+ }
+ .titulo{
+         @extend .fuente;
+         font-size: $fontSizeTitulos;
+         letter-spacing: 1px;
+         animation-duration: 1.5s;
+         animation-name: aparicion;
+ }
+ .tituloImagenes{
+    @extend .titulo;
+    margin: 35px 25px 25px 25px;                    
+ }
+ .texto{
+        @extend .fuente;
+        font-size: $fontSizeTextos;
+ }
+ .textoEquipo{
+     margin: auto 15px auto 0px;
+     animation-duration: 2.5s;
+     animation-name: aparicion; 
+ }
+ #linkTwitter{
+    margin-right: 5%;        
+ }
+ #linkYoutube{
+        margin-right: 20%;        
+ }
+ .links:hover{
+              transform: scale(1.3);
+ }
+ #imgPlataformas{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     margin-top: 10%;
+     margin-bottom: 15px;
+ }
+ #imgACC{
+     width: 220px;
+     height: 85px;
+     animation-duration: 3s;
+     animation-name: aparicion; 
+ }
+ #imgF1{
+    margin-top: 30px;
+    width: 170px;
+    height: 80px;
+    animation-duration: 3s;
+    animation-name: aparicion; 
+ }
+ #imgACC:hover{
+               transform: scale(1.2);
+ }
+ #imgF1:hover{
+     transform: scale(1.5);
+ }
+ #img404{
+         width: 55%;
+         margin-left: 20%;
+         animation-duration: 3s;
+         animation-name: aparicion;      
+ }
+ .subtituloPiloto1{
+                   @extend .fuente;
+                   font-size: $fontSizeSubtitulos;
+                   text-align: left;
+                   letter-spacing: 0.5px;
+                   margin: 40px 20px 40px 0px;
+                   animation-duration: 2.5s;
+                   animation-name: aparicion;
+       
+ }
+ .subtituloPiloto2{
+                   @extend .fuente;
+                   font-size: $fontSizeSubtitulos;
+                   text-align: left;
+                   letter-spacing: 0.5px;
+                   margin: 40px 20px 40px 0px;
+                   animation-duration: 2.5s;
+                   animation-name: aparicion;
+       
+ }
+ .textoPiloto1{
+               @extend .fuente;
+               font-size: $fontSizeTextos;
+               text-align: left;
+               margin: 20px 20px 40px 0px;
+               animation-duration: 3.5s;
+               animation-name: aparicion;
+
+ }
+ .textoPiloto2{
+               @extend .fuente;
+               font-size: $fontSizeTextos;
+               text-align: left;
+               margin: 20px 20px 40px 0px;
+               animation-duration: 3.5s;
+               animation-name: aparicion;
+
+ }
+ .subtituloCalendario{
+                      @extend .fuente;
+                      font-size: $fontSizeSubtitulos;
+                      text-align: left;
+                      letter-spacing: 0.5px;
+                      animation-duration: 2.5s;
+                      animation-name: aparicion;       
+ }
+ #tabla{
+        text-align: center;
+        animation-duration: 3.5s;
+        animation-name: aparicion;
+ }
+.encabezado{
+             @extend .fuente;
+             font-size: $tablaPilotos_encabezado--fontSize -0.7;
+             text-decoration:underline;
+}
+.textoTabla{
+             @extend .fuente;
+             font-size: $tablaPilotos_textoTabla--fontSize -0.5;
+ }
+ #cajaFormulario{
+                 margin-top: 40px;
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+ }
+ .mb-3{
+     width: 50%;
+     animation-duration: 3s;
+     animation-name: aparicion;  
+ }
+ .btn{
+      animation-duration: 3s;
+      animation-name: aparicion;  
+ }
+ @media only screen and (min-width: 360px){
+                                           #imgACC{
+                                                   width: 360px;
+                                                   height: 110px;
+                                           }
+                                           #imgF1{
+                                             width: 220px;
+                                             height: 100px;
+                                           }
+ }
+ @media only screen and (min-width: 399px){
+                                           .textoTabla{
+                                                       font-size: $tablaPilotos_textoTabla--fontSize;
+                                           }
+                                           .encabezado{
+                                                       font-size: $tablaPilotos_encabezado--fontSize;
+                                           }
+}
+@media only screen and (min-width: 610px){
+                                          #imgF1{
+                                                 margin-top: 0px;
+                                          }
+}
+ @media only screen and (min-width: 768px){
+                                           .textoPiloto1{
+                                           text-align: left;
+                                           width: 70%;
+                                           margin: 20px 20px 40px 0px;
+                                           }
+                                           .subtituloPiloto2{
+                                           text-align: right;
+                                           letter-spacing: 0.5px;
+                                           margin: 40px 0px 40px 20px;
+                                           }
+                                           .textoPiloto2{
+                                           text-align: right;
+                                           padding-left: 38.6%;
+                                           margin: 20px 0px 40px 20px;
+                                           }
+                                           .subtituloCalendario{
+                                           text-align: center;
+                                           margin-top: 30px;
+                                           margin-bottom: 20px;
+                                           }
+ }
+ @media only screen and (max-width: 950px){
+                                            .imgLogo{
+                                            margin: auto;
+                                            }
+}
+ @media only screen and (min-width: 1024px){
+                                            #tabla{
+                                            margin-left: 32%;
+                                            margin-right: 32%;
+                                            } 
+ }    
+ @media only screen and (min-width: 1200px){
+                                            .menu{
+                                            position:sticky;
+                                            top: 0px; 
+                                            left: 0px;
+                                            }
+ }
+ .carousel-inner img{
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding-bottom: 2.7%;
+                        animation-duration: 3s;
+                        animation-name: aparicion;                    
+ }
+ .carousel-indicators{
+                      position:static;
+                      animation-duration: 3s;
+                      animation-name: aparicion;                  
+ }
+ .carousel-control-next{
+                        animation-duration: 3s;
+                        animation-name: aparicion;                  
+ }
+ .carousel-control-prev{
+    animation-duration: 3s;
+    animation-name: aparicion;                  
+}
+ @keyframes aparicion {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
